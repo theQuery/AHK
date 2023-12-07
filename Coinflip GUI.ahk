@@ -51,7 +51,6 @@ ButtonBet:
     }
 
     if (Amount > 0 and Amount <= MaxBet) {
-
         GuiControl, Disable, Bet
         GuiControl, Enable, Stop
         Gui, Show, NoActivate
@@ -62,7 +61,6 @@ ButtonBet:
             SendInput {Enter}
             Sleep 3300
         }
-
     } else {
         MsgBox,, Bet Denied, Your bet needs to be an amount between 1 and %MaxBet% %Currency%.
     }
